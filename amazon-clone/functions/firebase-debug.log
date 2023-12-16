@@ -1,0 +1,312 @@
+[debug] [2023-12-16T06:01:36.462Z] ----------------------------------------------------------------------
+[debug] [2023-12-16T06:01:36.472Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Akshay Rathod\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-12-16T06:01:36.475Z] CLI Version:   13.0.1
+[debug] [2023-12-16T06:01:36.477Z] Platform:      win32
+[debug] [2023-12-16T06:01:36.478Z] Node Version:  v18.17.1
+[debug] [2023-12-16T06:01:36.492Z] Time:          Sat Dec 16 2023 11:31:36 GMT+0530 (India Standard Time)
+[debug] [2023-12-16T06:01:36.493Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-16T06:01:36.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-16T06:01:36.978Z] > authorizing via signed-in user (akshayrathod.sknsits.comp@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-12-16T06:01:37.028Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-16T06:01:37.029Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-16T06:01:37.030Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-12-16T06:01:37.082Z] [hub] writing locator at C:\Users\AKSHAY~1\AppData\Local\Temp\hub-clone-201cf.json
+[debug] [2023-12-16T06:01:37.187Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-16T06:01:37.188Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-16T06:01:37.188Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-12-16T06:01:37.236Z] defaultcredentials: writing to file C:\Users\Akshay Rathod\AppData\Roaming\firebase\akshayrathod_sknsits.comp_gmail.com_application_default_credentials.json
+[debug] [2023-12-16T06:01:37.286Z] Setting GAC to C:\Users\Akshay Rathod\AppData\Roaming\firebase\akshayrathod_sknsits.comp_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Akshay Rathod\\AppData\\Roaming\\firebase\\akshayrathod_sknsits.comp_gmail.com_application_default_credentials.json"}}
+[debug] [2023-12-16T06:01:37.296Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf/adminSdkConfig [none]
+[debug] [2023-12-16T06:01:37.794Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf/adminSdkConfig 200
+[debug] [2023-12-16T06:01:37.794Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf/adminSdkConfig {"projectId":"clone-201cf","storageBucket":"clone-201cf.appspot.com"}
+[debug] [2023-12-16T06:01:37.855Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-201cf/sites 
+[debug] [2023-12-16T06:01:39.126Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-201cf/sites 200
+[debug] [2023-12-16T06:01:39.127Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-201cf/sites {"sites":[{"name":"projects/clone-201cf/sites/clone-201cf","defaultUrl":"https://clone-201cf.web.app","appId":"1:756048945671:web:ceade9f0f63f0f8de140a2","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-16T06:01:39.129Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf/webApps/1:756048945671:web:ceade9f0f63f0f8de140a2/config [none]
+[debug] [2023-12-16T06:01:40.141Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf/webApps/1:756048945671:web:ceade9f0f63f0f8de140a2/config 200
+[debug] [2023-12-16T06:01:40.141Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf/webApps/1:756048945671:web:ceade9f0f63f0f8de140a2/config {"projectId":"clone-201cf","appId":"1:756048945671:web:ceade9f0f63f0f8de140a2","storageBucket":"clone-201cf.appspot.com","apiKey":"AIzaSyCjvGqjIUeX77uV92FUEitVzqt77ctGXes","authDomain":"clone-201cf.firebaseapp.com","messagingSenderId":"756048945671","measurementId":"G-0ECCRGSFP0"}
+[debug] [2023-12-16T06:01:40.156Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf [none]
+[debug] [2023-12-16T06:01:40.650Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf 200
+[debug] [2023-12-16T06:01:40.650Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-201cf {"projectId":"clone-201cf","projectNumber":"756048945671","displayName":"Amazon-Clone","name":"projects/clone-201cf","resources":{"hostingSite":"clone-201cf"},"state":"ACTIVE","etag":"1_ffe94c60-6508-4268-a0e1-8fefa50512bb"}
+[info] i  hosting[clone-201cf]: Serving hosting files from: y {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1my\u001b[22m"}}
+[info] +  hosting[clone-201cf]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-12-16T06:01:40.736Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-12-16T06:01:40.737Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-12-16T06:01:40.737Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Akshay Rathod\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Akshay Rathod\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-12-16T06:01:41.034Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-12-16T06:01:41.037Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Akshay Rathod\\OneDrive\\Desktop\\front end project\\Amazon-project\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2023-12-16T06:01:41.061Z] Validating nodejs source
+[debug] [2023-12-16T06:01:44.749Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.5.0",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-16T06:01:44.750Z] Building nodejs source
+[debug] [2023-12-16T06:01:44.752Z] Failed to find version of module node: reached end of search path C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-16T06:01:44.760Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-16T06:01:44.784Z] Found firebase-functions binary at 'C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8560
+
+[error] Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+    at new NodeError (node:internal/errors:405:5)
+    at exportsNotFound (node:internal/modules/esm/resolve:359:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:695:9)
+    at resolveExports (node:internal/modules/cjs/loader:567:36)
+    at Module._findPath (node:internal/modules/cjs/loader:636:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at Object.<anonymous> (C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js:12:16) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+}
+
+[debug] [2023-12-16T06:01:46.393Z] Got response code 400; body Failed to generate manifest from function source: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-12-16T06:05:16.736Z] File C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Akshay Rathod\\OneDrive\\Desktop\\front end project\\Amazon-project\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-16T06:05:17.765Z] Validating nodejs source
+[debug] [2023-12-16T06:05:21.931Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.5.0",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-16T06:05:21.932Z] Building nodejs source
+[debug] [2023-12-16T06:05:21.933Z] Failed to find version of module node: reached end of search path C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-16T06:05:21.941Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-16T06:05:21.957Z] Found firebase-functions binary at 'C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-16T06:05:21.981Z] File C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Akshay Rathod\\OneDrive\\Desktop\\front end project\\Amazon-project\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8095
+
+[debug] [2023-12-16T06:05:22.991Z] Validating nodejs source
+[debug] [2023-12-16T06:05:26.123Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.5.0",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-16T06:05:26.123Z] Building nodejs source
+[debug] [2023-12-16T06:05:26.124Z] Failed to find version of module node: reached end of search path C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[error] Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+    at new NodeError (node:internal/errors:405:5)
+    at exportsNotFound (node:internal/modules/esm/resolve:359:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:695:9)
+    at resolveExports (node:internal/modules/cjs/loader:567:36)
+    at Module._findPath (node:internal/modules/cjs/loader:636:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at Object.<anonymous> (C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js:12:16) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+}
+
+[debug] [2023-12-16T06:05:26.147Z] Got response code 400; body Failed to generate manifest from function source: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+[debug] [2023-12-16T06:05:26.151Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-16T06:05:26.165Z] Found firebase-functions binary at 'C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-16T06:05:26.186Z] File C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Akshay Rathod\\OneDrive\\Desktop\\front end project\\Amazon-project\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8808
+
+[debug] [2023-12-16T06:05:27.190Z] Validating nodejs source
+[debug] [2023-12-16T06:05:30.067Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.5.0",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-16T06:05:30.069Z] Building nodejs source
+[debug] [2023-12-16T06:05:30.069Z] Failed to find version of module node: reached end of search path C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-16T06:05:30.074Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-16T06:05:30.087Z] Found firebase-functions binary at 'C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[error] Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+    at new NodeError (node:internal/errors:405:5)
+    at exportsNotFound (node:internal/modules/esm/resolve:359:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:695:9)
+    at resolveExports (node:internal/modules/cjs/loader:567:36)
+    at Module._findPath (node:internal/modules/cjs/loader:636:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at Object.<anonymous> (C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js:12:16) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+}
+
+[debug] [2023-12-16T06:05:31.078Z] Got response code 400; body Failed to generate manifest from function source: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8130
+
+[debug] [2023-12-16T06:05:31.346Z] File C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Akshay Rathod\\OneDrive\\Desktop\\front end project\\Amazon-project\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[error] Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+    at new NodeError (node:internal/errors:405:5)
+    at exportsNotFound (node:internal/modules/esm/resolve:359:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:695:9)
+    at resolveExports (node:internal/modules/cjs/loader:567:36)
+    at Module._findPath (node:internal/modules/cjs/loader:636:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at Object.<anonymous> (C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\index.js:12:16) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+}
+
+[debug] [2023-12-16T06:05:32.124Z] Got response code 400; body Failed to generate manifest from function source: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './app' is not defined by "exports" in C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\firebase-functions\package.json
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-12-16T06:05:32.352Z] Validating nodejs source
+[debug] [2023-12-16T06:05:36.786Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.5.0",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-16T06:05:36.786Z] Building nodejs source
+[debug] [2023-12-16T06:05:36.787Z] Failed to find version of module node: reached end of search path C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-16T06:05:36.794Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-16T06:05:36.813Z] Found firebase-functions binary at 'C:\Users\Akshay Rathod\OneDrive\Desktop\front end project\Amazon-project\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8871
+
+[debug] [2023-12-16T06:05:37.989Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
